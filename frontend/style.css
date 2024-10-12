@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  
+  header p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+  
+  /* Latest News Section */
+  #latest-news {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  #latest-news h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  
+  /* News Grid Layout */
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .news-grid .news-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .news-grid .news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  }
+  
+  .news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .news-item a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #004085;
+    text-decoration: none;
+    margin: 15px 0;
+    display: block;
+    transition: color 0.3s ease;
+  }
+  
+  .news-item a:hover {
+    color: #6610f2;
+  }
+  
+  .news-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .news-item .source {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Read More Button */
+  .news-item .read-more {
+    background-color: #004085;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .news-item .read-more:hover {
+    background-color: #6610f2;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #004085;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    header p {
+      font-size: 1.1rem;
+    }
+  
+    #latest-news h2 {
+      font-size: 2.2rem;
+    }
+  
+    .news-item a {
+      font-size: 1.2rem;
+    }
+  }
+  

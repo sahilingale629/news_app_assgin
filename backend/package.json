@@ -1,0 +1,14 @@
+{
+    "name": "news-website",
+    "version": "1.0.0",
+    "description": "News Website fetching real-time headlines from News API",
+    "main": "server.js",
+    "scripts": {
+      "start": "node backend/server.js"
+    },
+    "dependencies": {
+      "axios": "^1.0.0",
+      "express": "^4.17.1"
+    }
+  }
+  
